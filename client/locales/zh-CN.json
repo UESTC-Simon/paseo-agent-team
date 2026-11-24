@@ -1,0 +1,54 @@
+{
+  "settingsScreen": "Agent Team",
+  "composer": {
+    "teamTitle": "Agent Team（{{worker}}）",
+    "singleTitle": "单 Agent"
+  },
+  "commands": {
+    "toggle": "切换 Agent Team 模式",
+    "settings": "打开 Agent Team 设置"
+  },
+  "settings": {
+    "defaults": "会话默认设置",
+    "defaultMode": "默认模式",
+    "defaultModeHint": "新会话未选择模式时使用此设置。",
+    "team": "Agent Team",
+    "single": "单 Agent",
+    "singleModeHint": "添加单 Agent 模式指令",
+    "exposeTool": "提供实时状态工具",
+    "exposeToolHint": "工具是否可用在提供商会话启动时确定。"
+  },
+  "worker": {
+    "title": "工作 Agent",
+    "provider": "工作 Agent 提供商",
+    "providerHint": "更换提供商时会清空已选模型和权限模式。",
+    "model": "工作 Agent 模型",
+    "discoverModel": "查找可用模型",
+    "mode": "工作 Agent 权限模式",
+    "discoverMode": "需要时查找权限模式"
+  },
+  "delegation": {
+    "title": "任务委派",
+    "scope": "委派范围",
+    "custom": "自定义团队指令"
+  },
+  "actions": {
+    "save": "保存",
+    "saveField": "保存{{field}}",
+    "reset": "重置"
+  },
+  "status": {
+    "loading": "正在加载…",
+    "unavailable": "此宿主上不可用",
+    "invalid": "恢复默认设置",
+    "saveError": "保存失败",
+    "catalogUnavailable": "无法加载提供商选项。"
+  },
+  "acp": {
+    "title": "Antigravity 和 ACP",
+    "stateFile": "守护进程宿主上的状态文件",
+    "integration": "提供商规则",
+    "note": "将下方规则添加到 ACP 提供商的指令。启用 Paseo 工具注入后重新打开会话，工具才可用。",
+    "snippet": "每项任务开始时调用 Paseo 工具 agent_team_status，遵循返回的当前模式和指令。工具不可用时，仅在已设置 PASEO_AGENT_TEAM_MODE 的情况下使用本地回退。读取守护进程宿主上的 {{path}}，如果 PASEO_AGENT_ID 可用，查找 agents[PASEO_AGENT_ID]。没有对应条目时，使用会话启动时的 PASEO_AGENT_TEAM_MODE 和 PASEO_AGENT_TEAM_WORKER。通过 create_agent 委派时始终传入 labels: { \"agent-team/role\": \"worker\" }。"
+  }
+}

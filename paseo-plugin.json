@@ -1,0 +1,15 @@
+{
+  "id": "agent-team",
+  "name": "Agent Team Switcher",
+  "description": "One-click composer toggle between Single Agent and Agent Team mode with persistent delegation defaults.",
+  "translations": {
+    "zh-CN": {
+      "name": "Agent Team 切换器",
+      "description": "在聊天框一键切换单 Agent 与 Agent Team 协作模式，并持久化默认委派配置。"
+    }
+  },
+  "media": [],
+  "requirements": {
+    "paseo": ">=0.17.3"
+  }
+}

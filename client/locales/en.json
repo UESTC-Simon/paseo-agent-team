@@ -1,0 +1,54 @@
+{
+  "settingsScreen": "Agent Team",
+  "composer": {
+    "teamTitle": "Agent Team ({{worker}})",
+    "singleTitle": "Single Agent"
+  },
+  "commands": {
+    "toggle": "Toggle Agent Team mode",
+    "settings": "Open Agent Team settings"
+  },
+  "settings": {
+    "defaults": "Conversation defaults",
+    "defaultMode": "Default mode",
+    "defaultModeHint": "Applies when a new conversation has no mode selected.",
+    "team": "Agent Team",
+    "single": "Single Agent",
+    "singleModeHint": "Include Single Agent instructions",
+    "exposeTool": "Expose the live status tool",
+    "exposeToolHint": "Tool availability is set when the provider session opens."
+  },
+  "worker": {
+    "title": "Worker",
+    "provider": "Worker provider",
+    "providerHint": "Changing provider clears its model and permission mode selections.",
+    "model": "Worker model",
+    "discoverModel": "Discover an available model",
+    "mode": "Worker permission mode",
+    "discoverMode": "Discover a mode if required"
+  },
+  "delegation": {
+    "title": "Delegation",
+    "scope": "Delegation scope",
+    "custom": "Custom team instructions"
+  },
+  "actions": {
+    "save": "Save",
+    "saveField": "Save {{field}}",
+    "reset": "Reset"
+  },
+  "status": {
+    "loading": "Loading…",
+    "unavailable": "Unavailable on this host",
+    "invalid": "Restore default settings",
+    "saveError": "Save failed",
+    "catalogUnavailable": "Could not load the provider catalog."
+  },
+  "acp": {
+    "title": "Antigravity and ACP",
+    "stateFile": "State file on the daemon host",
+    "integration": "Provider rule",
+    "note": "Add this rule to your ACP provider's instructions. Enable Paseo tool injection and reopen the session to expose the tool.",
+    "snippet": "At the start of each task, call the Paseo tool agent_team_status and follow its current mode and instructions. If it is unavailable, only use the local fallback when PASEO_AGENT_TEAM_MODE is set. Read {{path}} on the daemon host and look up agents[PASEO_AGENT_ID] if the ID is available. If there is no entry, use the launch values PASEO_AGENT_TEAM_MODE and PASEO_AGENT_TEAM_WORKER. When delegating with create_agent, always include labels: { \"agent-team/role\": \"worker\" }."
+  }
+}
