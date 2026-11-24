@@ -4,6 +4,14 @@
   "type": "module",
   "license": "MIT",
   "description": "One-click composer toggle between Single Agent and Agent Team mode with persistent delegation defaults.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UESTC-Simon/paseo-agent-team.git"
+  },
+  "homepage": "https://github.com/UESTC-Simon/paseo-agent-team#readme",
+  "bugs": {
+    "url": "https://github.com/UESTC-Simon/paseo-agent-team/issues"
+  },
   "keywords": ["paseo", "paseo-plugin", "agent-team", "subagent", "orchestration"],
   "files": [
     "paseo-plugin.json",

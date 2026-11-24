@@ -6,7 +6,13 @@
 
 ## 安装
 
-宿主与客户端均需使用 **Paseo 0.17.3 或更新版本**。在目标守护进程上启用插件，然后在该宿主执行以下命令，将路径替换为本地仓库目录。
+宿主与客户端均需使用 **Paseo 0.17.3 或更新版本**。在目标守护进程上启用插件，然后直接从 GitHub 安装：
+
+```sh
+paseo plugin install github:UESTC-Simon/paseo-agent-team
+```
+
+或从本地目录安装：
 
 ```sh
 paseo plugin install /absolute/path/to/paseo-agent-team

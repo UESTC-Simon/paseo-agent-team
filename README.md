@@ -6,7 +6,13 @@ Switch a Paseo conversation between **Single Agent** and **Agent Team** from the
 
 ## Installation
 
-Use Paseo **0.17.3 or later** on both the host and the client. Enable plugins on the selected daemon. From a local checkout, run the following on the daemon machine. Substitute your checkout path.
+Use Paseo **0.17.3 or later** on both the host and the client. Enable plugins on the selected daemon, then install directly from GitHub:
+
+```sh
+paseo plugin install github:UESTC-Simon/paseo-agent-team
+```
+
+Or from a local checkout on the daemon machine:
 
 ```sh
 paseo plugin install /absolute/path/to/paseo-agent-team
